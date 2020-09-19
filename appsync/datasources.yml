@@ -1,0 +1,6 @@
+- type: AMAZON_DYNAMODB
+  name: "ToDo"
+  description: "It is toDo table."
+  config:
+    tableName: { Ref: todo }
+    versioned: false

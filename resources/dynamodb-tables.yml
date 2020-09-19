@@ -1,0 +1,13 @@
+Resources:
+  todo:
+    Type: "AWS::DynamoDB::Table"
+    DeletionPolicy: Retain
+    Properties:
+      TableName: ${self:provider.environment.DYNAMODB_TABLE_PREFIX}-example-todo
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      BillingMode: PAY_PER_REQUEST
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH

@@ -1,0 +1,6 @@
+- dataSource: "ToDo"
+  type: "Query"
+  field: "listTodo"
+- dataSource: "ToDo"
+  type: "Mutation"
+  field: "createTodo"

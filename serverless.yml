@@ -1,0 +1,19 @@
+service: todo-serverless
+provider:
+  name: aws
+  runtime: nodejs12.
+  stage: ${opt:stage,"dev"}
+  region: ap-northeast-1
+  environment:
+    DYNAMODB_TABLE_PREFIX: ${self:provider.stage}
+
+plugins:
+  - serverless-appsync-plugin
+
+custom:
+  appSync: ${file(./appsync/stack.yml)}
+
+resources:
+  - ${file(./resources/cognito.yml)}
+  - ${file(./resources/dynamodb-tables.yml)}
+  - ${file(./resources/iam-role-statements.yml)}
