@@ -1,0 +1,24 @@
+{
+  "name": "appsync-startkit",
+  "version": "1.0.0",
+  "description": "AppSyncでGraphQLを実装する際のスターターキットです。 実装例とデプロイまでをカバーしています。",
+  "main": "index.js",
+  "dependencies": {
+    "serverless-appsync-plugin": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "sls deploy -v",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://KitaharaMugiro:ngthornym20@github.com/KitaharaMugiro/AppSync-StartKit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KitaharaMugiro/AppSync-StartKit/issues"
+  },
+  "homepage": "https://github.com/KitaharaMugiro/AppSync-StartKit#readme"
+}
