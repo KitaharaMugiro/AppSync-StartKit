@@ -2,6 +2,12 @@
 AppSyncでGraphQLを実装する際のスターターキットです。
 実装例とデプロイまでをカバーしています。
 
+# 使い方
+npxが使用できる環境で、以下のコマンドを実行する。
+
+```
+npx degit https://github.com/KitaharaMugiro/AppSync-StartKit <Directory Name>
+```
 
 # 内容
 - [x] スキーマ定義
